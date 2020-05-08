@@ -29,8 +29,6 @@ const Register = (props) => {
     const fetchItems = async () => {
         await dispatch(all());
         await dispatch(setCurrent(null, null));
-
-        setItem({ ...item, type_user_id: types[0].id });
     };
 
     const options = types.map((data) => (
@@ -87,6 +85,7 @@ const Register = (props) => {
                     value={item.type_user_id}
                     onChange={handleChange}
                 >
+                    <option>- select type user -</option>
                     {options}
                 </Form.Control>
             </Form.Group>
