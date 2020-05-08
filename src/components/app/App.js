@@ -12,7 +12,6 @@ import PrivateRoute from "../../utils/PrivateRoute";
 import PublicRoute from "../../utils/PublicRoute";
 import setAuthorizationToken from "../../utils/setAuthorizationToken";
 import { ADMIN, USER } from "../../utils/roleAuth";
-import { setCurrent } from "../../actions/auth";
 
 function App() {
 	setAuthorizationToken();
